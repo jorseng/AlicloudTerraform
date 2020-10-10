@@ -1,25 +1,60 @@
-Error: Invalid resource type
-
-  on log_monitoring_audit.tf line 74, in resource "alicloud_config_delivery_channel" "cc_channel":
-  74: resource "alicloud_config_delivery_channel" "cc_channel" {
-
-The provider provider.alicloud does not support resource type
-"alicloud_config_delivery_channel".
-
-
-Error: Invalid resource type
-
-  on log_monitoring_audit.tf line 85, in resource "alicloud_config_configuration_recorder" "cc_recorder":
-  85: resource "alicloud_config_configuration_recorder" "cc_recorder" {
-
-The provider provider.alicloud does not support resource type
-"alicloud_config_configuration_recorder".
-
-
-Error: Invalid resource type
-
-  on log_monitoring_audit.tf line 92, in resource "alicloud_config_rule" "cc_rule":
-  92: resource "alicloud_config_rule" "cc_rule" {
-
-The provider provider.alicloud does not support resource type
-"alicloud_config_rule".
+2020/10/10 03:26:05 [INFO] Terraform version: 0.13.4  
+2020/10/10 03:26:05 [INFO] Go runtime version: go1.14.7
+2020/10/10 03:26:05 [INFO] CLI args: []string{"/home/jorseng/terraform/terraform", "plan"}
+2020/10/10 03:26:05 [DEBUG] Attempting to open CLI config file: /home/jorseng/.terraformrc
+2020/10/10 03:26:05 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/10/10 03:26:05 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2020/10/10 03:26:05 [DEBUG] ignoring non-existing provider search directory /home/jorseng/.terraform.d/plugins
+2020/10/10 03:26:05 [DEBUG] ignoring non-existing provider search directory /home/jorseng/.local/share/terraform/plugins
+2020/10/10 03:26:05 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2020/10/10 03:26:05 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2020/10/10 03:26:05 [INFO] CLI command args: []string{"plan"}
+2020/10/10 03:26:05 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
+  Use TF_LOG=TRACE to see Terraform's internal logs.
+  ----
+2020/10/10 03:26:05 [DEBUG] New state was assigned lineage "a14f7982-c3b3-7cce-4e2d-7955d2f7c87e"
+2020/10/10 03:26:06 [DEBUG] checking for provisioner in "."
+2020/10/10 03:26:06 [DEBUG] checking for provisioner in "/home/jorseng/terraform"
+2020/10/10 03:26:06 [INFO] Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2020/10/10 03:26:06 [INFO] backend/local: starting Plan operation
+2020-10-10T03:26:06.632Z [INFO]  plugin: configuring client automatic mTLS
+2020-10-10T03:26:06.671Z [DEBUG] plugin: starting plugin: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0 args=[.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0]
+2020-10-10T03:26:06.672Z [DEBUG] plugin: plugin started: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0 pid=11254
+2020-10-10T03:26:06.672Z [DEBUG] plugin: waiting for RPC address: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0
+2020-10-10T03:26:06.710Z [INFO]  plugin.terraform-provider-alicloud_v1.97.0: configuring server automatic mTLS: timestamp=2020-10-10T03:26:06.710Z
+2020-10-10T03:26:06.755Z [DEBUG] plugin.terraform-provider-alicloud_v1.97.0: plugin address: network=unix address=/tmp/plugin539864116 timestamp=2020-10-10T03:26:06.755Z
+2020-10-10T03:26:06.756Z [DEBUG] plugin: using plugin: version=5
+2020-10-10T03:26:06.871Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020-10-10T03:26:06.914Z [DEBUG] plugin: plugin process exited: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0 pid=11254
+2020-10-10T03:26:06.916Z [DEBUG] plugin: plugin exited
+2020/10/10 03:26:06 [INFO] terraform: building graph: GraphTypeValidate
+2020/10/10 03:26:06 [DEBUG] ProviderTransformer: "alicloud_config_delivery_channel.cc_channel" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/alicloud"]
+2020/10/10 03:26:06 [DEBUG] ProviderTransformer: "alicloud_config_configuration_recorder.cc_recorder" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/alicloud"]
+2020/10/10 03:26:06 [DEBUG] ProviderTransformer: "alicloud_config_rule.cc_rule" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/alicloud"]
+2020/10/10 03:26:06 [ERROR] AttachSchemaTransformer: No resource schema available for alicloud_config_delivery_channel.cc_channel
+2020/10/10 03:26:06 [ERROR] AttachSchemaTransformer: No resource schema available for alicloud_config_configuration_recorder.cc_recorder
+2020/10/10 03:26:06 [ERROR] AttachSchemaTransformer: No resource schema available for alicloud_config_rule.cc_rule
+2020/10/10 03:26:06 [WARN] no schema is attached to alicloud_config_delivery_channel.cc_channel, so config references cannot be detected
+2020/10/10 03:26:06 [DEBUG] ReferenceTransformer: "alicloud_config_delivery_channel.cc_channel" references: []
+2020/10/10 03:26:06 [WARN] no schema is attached to alicloud_config_configuration_recorder.cc_recorder, so config references cannot be detected
+2020/10/10 03:26:06 [DEBUG] ReferenceTransformer: "alicloud_config_configuration_recorder.cc_recorder" references: []
+2020/10/10 03:26:06 [WARN] no schema is attached to alicloud_config_rule.cc_rule, so config references cannot be detected
+2020/10/10 03:26:06 [DEBUG] ReferenceTransformer: "alicloud_config_rule.cc_rule" references: []
+2020/10/10 03:26:06 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/alicloud\"]" references: []
+2020/10/10 03:26:06 [DEBUG] Starting graph walk: walkValidate
+2020-10-10T03:26:06.927Z [INFO]  plugin: configuring client automatic mTLS
+2020-10-10T03:26:06.967Z [DEBUG] plugin: starting plugin: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0 args=[.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0]
+2020-10-10T03:26:06.969Z [DEBUG] plugin: plugin started: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0 pid=11262
+2020-10-10T03:26:06.969Z [DEBUG] plugin: waiting for RPC address: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0
+2020-10-10T03:26:07.012Z [INFO]  plugin.terraform-provider-alicloud_v1.97.0: configuring server automatic mTLS: timestamp=2020-10-10T03:26:07.012Z
+2020-10-10T03:26:07.060Z [DEBUG] plugin.terraform-provider-alicloud_v1.97.0: plugin address: address=/tmp/plugin135459818 network=unix timestamp=2020-10-10T03:26:07.060Z
+2020-10-10T03:26:07.061Z [DEBUG] plugin: using plugin: version=5
+2020-10-10T03:26:07.175Z [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2020/10/10 03:26:07 [ERROR] eval: *terraform.EvalValidateResource, err: Invalid resource type: The provider provider.alicloud does not support resource type "alicloud_config_rule".
+2020/10/10 03:26:07 [ERROR] eval: *terraform.EvalSequence, err: Invalid resource type: The provider provider.alicloud does not support resource type "alicloud_config_rule".
+2020/10/10 03:26:07 [ERROR] eval: *terraform.EvalValidateResource, err: Invalid resource type: The provider provider.alicloud does not support resource type "alicloud_config_delivery_channel".
+2020/10/10 03:26:07 [ERROR] eval: *terraform.EvalSequence, err: Invalid resource type: The provider provider.alicloud does not support resource type "alicloud_config_delivery_channel".
+2020/10/10 03:26:07 [ERROR] eval: *terraform.EvalValidateResource, err: Invalid resource type: The provider provider.alicloud does not support resource type "alicloud_config_configuration_recorder".
+2020/10/10 03:26:07 [ERROR] eval: *terraform.EvalSequence, err: Invalid resource type: The provider provider.alicloud does not support resource type "alicloud_config_configuration_recorder".
+2020-10-10T03:26:07.281Z [DEBUG] plugin: plugin process exited: path=.terraform/plugins/registry.terraform.io/hashicorp/alicloud/1.97.0/linux_amd64/terraform-provider-alicloud_v1.97.0 pid=11262
+2020-10-10T03:26:07.281Z [DEBUG] plugin: plugin exited
