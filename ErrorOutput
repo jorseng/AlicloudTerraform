@@ -1,0 +1,25 @@
+Error: Invalid resource type
+
+  on log_monitoring_audit.tf line 74, in resource "alicloud_config_delivery_channel" "cc_channel":
+  74: resource "alicloud_config_delivery_channel" "cc_channel" {
+
+The provider provider.alicloud does not support resource type
+"alicloud_config_delivery_channel".
+
+
+Error: Invalid resource type
+
+  on log_monitoring_audit.tf line 85, in resource "alicloud_config_configuration_recorder" "cc_recorder":
+  85: resource "alicloud_config_configuration_recorder" "cc_recorder" {
+
+The provider provider.alicloud does not support resource type
+"alicloud_config_configuration_recorder".
+
+
+Error: Invalid resource type
+
+  on log_monitoring_audit.tf line 92, in resource "alicloud_config_rule" "cc_rule":
+  92: resource "alicloud_config_rule" "cc_rule" {
+
+The provider provider.alicloud does not support resource type
+"alicloud_config_rule".
